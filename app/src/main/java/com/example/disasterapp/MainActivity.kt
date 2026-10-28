@@ -3,7 +3,7 @@ package com.example.disasterapp
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.disasterapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         with(binding) {
             rvDisaster.apply {
                 adapter = adapterDisaster
-                layoutManager = LinearLayoutManager(this@MainActivity)
+                layoutManager = GridLayoutManager(this@MainActivity, 2)
             }
         }
     }
