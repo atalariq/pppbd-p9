@@ -30,14 +30,14 @@ class MainActivity : AppCompatActivity() {
 
     fun generateDummy(): List<Disaster> {
         return listOf(
-            Disaster(name = "Tsunami", type = "Natural"),
-            Disaster(name = "Volcanic Eruption", type = "Natural"),
-            Disaster(name = "Earthquake", type = "Natural"),
-            Disaster(name = "Flood", type = "Natural"),
-            Disaster(name = "Fire", type = "Natural"),
-            Disaster(name = "Nuclear Accident", type = "Man-made "),
-            Disaster(name = "Terrorist Attack", type = "Man-made "),
-            Disaster(name = "War", type = "Man-made")
+            Disaster("Tsunami", "Natural", R.drawable.tsunami),
+            Disaster("Volcanic Eruption", "Natural", R.drawable.volcanic_eruption),
+            Disaster("Earthquake", "Natural", R.drawable.earthquake),
+            Disaster("Flood", "Natural", R.drawable.flood),
+            Disaster("Forest Fire", "Natural or Man-made", R.drawable.forest_fire),
+            Disaster("Nuclear Accident", "Man-made", R.drawable.nuclear_accident),
+            Disaster("Terrorist Attack", "Man-made", R.drawable.terrorist_attack),
+            Disaster("War", "Man-made", R.drawable.war)
         )
     }
 }
